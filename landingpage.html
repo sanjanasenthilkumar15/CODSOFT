@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Digital Agency</title>
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        background: #ffeaf3;
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      /* Header */
+      .header {
+        background: rgb(237, 104, 115);
+        padding: 20px 30px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header-logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .header-nav {
+        display: flex;
+        gap: 15px;
+      }
+
+      .header-nav a {
+        color: #fff;
+        font-size: 1rem;
+      }
+
+      .header-nav a:hover {
+        text-decoration: underline;
+      }
+
+      .btn-header {
+        background: #ffcad4;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      .btn-header:hover {
+        background: #ffa6b1;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(to right, #ff9aa2, #ffc3a0);
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .hero .btn {
+        background: #fff;
+        color: #ff9aa2;
+        padding: 12px 25px;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: 0.3s ease;
+      }
+
+      .hero .btn:hover {
+        background: #fce4ec;
+      }
+
+      /* About Section */
+      .about {
+        padding: 60px 20px;
+        text-align: center;
+        background: #ffe5ec;
+      }
+
+      .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #ff6b81;
+      }
+
+      .about p {
+        max-width: 700px;
+        margin: 0 auto 30px;
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .about img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+
+      /* Services Section */
+      .services {
+        padding: 60px 20px;
+        background: #fffaf0;
+        text-align: center;
+      }
+
+      .services h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #f7aef8;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .service-card {
+        background: #fce4ec;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .service-card img {
+        max-width: 60px;
+        margin-bottom: 15px;
+      }
+
+      .service-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #ff6b81;
+      }
+
+      .service-card p {
+        font-size: 0.9rem;
+        color: #666;
+      }
+
+      /* Footer Section */
+      .footer {
+        background: rgb(237, 104, 115);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+      }
+
+      .footer a {
+        color: #ffcad4;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-logo">Landing Page</div>
+      <nav class="header-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="btn-header">Request a Consult</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Creative Digital Agency</h1>
+      <p>
+        We help businesses grow by delivering creative and innovative solutions.
+      </p>
+      <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        With 15 years of experience, we are passionate about achieving better
+        results for our clients. Our team of experts is dedicated to delivering
+        innovative digital solutions to help businesses succeed.
+      </p>
+      <img
+        src="https://i.pinimg.com/736x/04/ef/cf/04efcf40b29754c69ce4287064cd5863.jpg"
+        alt="About Us"
+      />
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img
+            src="https://i.pinimg.com/736x/aa/e0/a0/aae0a0d04d669165edc9812c1d96c9d5.jpg"
+            alt="User Experience"
+          />
+          <h3>User Experience</h3>
+          <p>
+            We design seamless and user-friendly interfaces for better
+            engagement.
+          </p>
+        </div>
+        <div class="service-card">
+          <img
+            src="https://i.pinimg.com/736x/3c/84/b1/3c84b1fce43b376966b1603fd03ee9ac.jpg"
+            alt="Creative Design"
+          />
+          <h3>Creative Design</h3>
+          <p>Our designs bring creativity and functionality together.</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="https://i.pinimg.com/736x/14/22/31/1422316ba149f1a986182b9e4b3864e3.jpg"
+            alt="Retina Ready"
+          />
+          <h3>Retina Ready</h3>
+          <p>
+            Delivering high-quality designs that look stunning on all devices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>
+        &copy; 2025 Creative Digital Agency. All rights reserved. |
+        <a href="#">Privacy Policy</a>
+      </p>
+    </footer>
+  </body>
+</html>
